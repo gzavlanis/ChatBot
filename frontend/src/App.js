@@ -115,7 +115,7 @@ function App() {
             {recording ? <UilMicrophone size = "26" color = "white"/> : <UilMicrophone size = "26" color = "grey"/>}
           </button>
           <button style = {{ backgroundColor: themes.secondaryColor }} className = {`p-4 rounded-r-xl`} onClick = {sendMessage}>
-            <UilAngleRightB size = "20" color = "white"/>
+            <UilAngleRightB size = "16" color = "white"/>
           </button>
         </div>
       </div>
