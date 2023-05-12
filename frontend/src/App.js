@@ -5,6 +5,7 @@ import axios from 'axios';
 import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition';
 import { Dna } from 'react-loader-spinner';
 import UilAngleRightB from '@iconscout/react-unicons/icons/uil-angle-right-b';
+import UilMicrophone from '@iconscout/react-unicons/icons/uil-microphone';
 
 function App() {
   const [userInput, setUserInput] = useState('');
@@ -111,7 +112,7 @@ function App() {
           <input className = 'p-3 bg-white w-full rounded-l-md border-0 outline-none' placeholder = 'How can I help you?' type = 'text' id = 'message' 
             name = 'message' value = {userInput} onChange = {(e) => setUserInput(e.target.value)}/>
           <button className = 'bg-white px-4' disabled = {!browserSupportsSpeechRecognition} onClick = {handleRecording}>
-            {recording}
+            {recording ? <UilMicrophone size = "26" color = "white"/> : <UilMicrophone size = "26" color = "grey"/>}
           </button>
           <button style = {{ backgroundColor: themes.secondaryColor }} className = {`p-4 rounded-r-xl`} onClick = {sendMessage}>
             <UilAngleRightB size = "20" color = "white"/>
