@@ -6,6 +6,7 @@ import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognitio
 import { Dna } from 'react-loader-spinner';
 import UilAngleRightB from '@iconscout/react-unicons/icons/uil-angle-right-b';
 import UilMicrophone from '@iconscout/react-unicons/icons/uil-microphone';
+import Navbar from './Navbar';
 
 function App() {
   const [userInput, setUserInput] = useState('');
@@ -64,6 +65,12 @@ function App() {
     }
   };
 
+  const handleKeyDown = (event) => {
+    if (event.key === 'Enter') {
+      sendMessage();
+    }
+  }
+
   if (!browserSupportsSpeechRecognition) {
     alert("Browser doesn't support speech recognition.");
   }
@@ -80,8 +87,9 @@ function App() {
 
   return(
     <div className = 'min-h-screen bg-grey-100' style = {{ backgroundColor: themes.backgroundColor }}>
+      <Navbar/>
       <div style = {{ backgroundColor: themes.primaryColor }} className = { `w-full h-18 fixed flex justify-between` }>
-        <div style = {{ color: themes.logoColor }} className = 'text-green-100 text-3xl font-bold p-5 font-sans'>Bot</div>
+        <div style = {{ color: themes.logoColor }} className = 'text-green-100 text-2xl font-bold p-3 font-sans'>Skill90 Bot</div>
       </div>
       <div className = 'py-32'>
         <div className = 'max-w-2xl mx-auto space-y-12 grid grid-cols-1 overflow-y-auto scroll-smooth scrollbar-hide overflow-x-hidden' style = {{ maxHeight: '30rem' }}>
@@ -93,8 +101,8 @@ function App() {
           <ul>
             {messages && messages.map((message, idx) => {
               return (
-                <div key = {idx} className = {`mt-3 ${message.fromUser ? "place-self-end text-right" : "place-self-start text-left"}`}>
-                  <div className = 'mt-3 p-3 rounded-2xl' style = {{
+                <div key = {idx} className = {`mt-3 shadow-xl ${message.fromUser ? "place-self-end text-right" : "place-self-start text-left"}`}>
+                  <div className = 'm-3 p-3 rounded-2xl' style = {{
                     backgroundColor: message.fromUser ? themes.primaryColor: 'white', color : message.fromUser ? themes.primaryFontColor : themes.secondaryFontColor,
                     borderTopLeftRadius: !message.fromUser && 0, borderTopRightRadius: message.fromUser && 0 }}>
                       <p className = 'break-words text-md'>{message.fromUser ? message.msg : message.msg}</p>
@@ -108,11 +116,11 @@ function App() {
       </div>
 
       <div className = {`w-full fixed bottom-0`}>
-        <div className = 'justify-end items-center bg-white rounded-xl flex mx-96 my-3'>
+        <div className = 'justify-end items-center bg-white rounded-xl flex mx-96 my-3 shadow-xl'>
           <input className = 'p-3 bg-white w-full rounded-l-md border-0 outline-none' placeholder = 'How can I help you?' type = 'text' id = 'message' 
-            name = 'message' value = {userInput} onChange = {(e) => setUserInput(e.target.value)}/>
+            name = 'message' value = {userInput} onChange = {(e) => setUserInput(e.target.value)} onKeyDown = {handleKeyDown}/>
           <button className = 'bg-white px-4' disabled = {!browserSupportsSpeechRecognition} onClick = {handleRecording}>
-            {recording ? <UilMicrophone size = "26" color = "white"/> : <UilMicrophone size = "26" color = "grey"/>}
+            {recording ? <UilMicrophone size = "26" color = "green"/> : <UilMicrophone size = "26" color = "grey"/>}
           </button>
           <button style = {{ backgroundColor: themes.secondaryColor }} className = {`p-4 rounded-r-xl`} onClick = {sendMessage}>
             <UilAngleRightB size = "16" color = "white"/>

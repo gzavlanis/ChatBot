@@ -1,7 +1,7 @@
 import openai, os
 from dotenv import load_dotenv
 
-load_dotenv(".env")
+load_dotenv("api/.env")
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
 def read_file(file):
@@ -12,7 +12,7 @@ def read_file(file):
         content = content + " " + line.strip()
     return content
 
-session_prompt = read_file("data/data.txt")
+session_prompt = read_file('api/data/data.txt')
 restart_sequence = "\n\nUser:"
 start_sequence = "\nVBot:"
 
@@ -23,7 +23,7 @@ def answer(ques, chat_log = None):
         try:
             prompt_text = f'{chat_log}{restart_sequence} {ques}{start_sequence}'
             print(prompt_text)
-            response = openai.Completion.create(model = 'text-davinci-003', prompt = prompt_text, temperature = 0.8, max_tokens = 500, top_p = 1, frequency_penalty = 0.0, presence_penalty = 0.6, stop = ["User:", "VBot"])
+            response = openai.Completion.create(model = 'text-davinci-003', prompt = prompt_text, temperature = 0.8, max_tokens = 2000, top_p = 1, frequency_penalty = 0.0, presence_penalty = 0.6, stop = ["User:", "VBot"])
             ans = response['choices'][0]['text']
             return str(ans)
         except:
@@ -49,9 +49,9 @@ def message_check(message, chat_log):
         flag_bot = checkViolation(ans)
         if(flag_bot):
             ans = "My response violates the Content Policy."
-        else:
-            ans = "Your message violates the Content Policy."
-        return ans
+    else:
+        ans = "Your message violates the Content Policy."
+    return ans
     
 def main(msg, chat):
     ans = message_check(msg, chat)

@@ -1,0 +1,14 @@
+I am VBot, your personal assistant. I can answer questions based on general knowledge.
+
+Answer questions based on the passage given below.
+The final data file looks as below.
+
+ABOUT SKILL90.io
+
+Skill90.io is a fast-growing innovative company which provides novel technological solutions and platforms to other partners and clients, as well as to the end-users.
+
+The company's philosophy is based on our belief and vision to create actively and consistently the optimum, long-term partnerships with our clients. We do this by providing them with the most sophisticated, custom high-tech solutions to their needs, together with constant support and high quality client services.
+
+The company already employs highly skilled developers and engineers, and we are constantly seeking to expand our team across a range of technical disciplines in order to achieve its mission and support its impressive and continuous growth. It is our belief that investment in technology is fundamental to this success, but investment in human capital is even more paramount to achieve our vision.
+
+You will be part of an energetic and talented team of experts that demonstrate superb technical competency, delivering critical technological solutions on time and ensuring the highest levels of availability, performance and security.

@@ -3,7 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from starlette.middleware.sessions import SessionMiddleware
 import uvicorn, os
 from dotenv import load_dotenv
-from api.main import gpt3_logs, main
+from main import gpt3_logs, main
 
 app = FastAPI()
 
