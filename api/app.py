@@ -7,7 +7,7 @@ from main import gpt3_logs, main
 
 app = FastAPI()
 
-load_dotenv(".env")
+load_dotenv("api/.env")
 secret_key_from_env = os.getenv("SECRET_KEY")
 app.add_middleware(SessionMiddleware, secret_key = secret_key_from_env)
 app.add_middleware(CORSMiddleware, allow_origins = ["*"], allow_credentials = True, allow_methods = ["*"], allow_headers = ["*"], )

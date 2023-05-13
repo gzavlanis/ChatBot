@@ -3,12 +3,47 @@ I am VBot, your personal assistant. I can answer questions based on general know
 Answer questions based on the passage given below.
 The final data file looks as below.
 
-ABOUT SKILL90.io
+SoftOne Technologies S.A. is a dynamic software company founded in 2002, focusing on the development of ERP, CRM, Cloud Services, enterprise mobility applications and electronic invoicing solutions. Headquartered in Athens, Greece, SoftOne delivers both on-premise and Software as a Service (SaaS) business solutions to midsize and large organizations, having earned numerous awards for market leadership and innovation.
 
-Skill90.io is a fast-growing innovative company which provides novel technological solutions and platforms to other partners and clients, as well as to the end-users.
+SoftOnes’ key personnel includes professionals with long experience in the development of top quality business software and cloud services. Today, SoftOne has more than 300 full-time employees in Greece (HQ), Romania, Cyprus and Bulgaria (subsidiaries).
 
-The company's philosophy is based on our belief and vision to create actively and consistently the optimum, long-term partnerships with our clients. We do this by providing them with the most sophisticated, custom high-tech solutions to their needs, together with constant support and high quality client services.
+Soft1 solutions are powerful, integrated and simple. They unify business processes across the enterprise, using a single, integrated platform. Soft1 applications and solutions are used by more than 28.000 enterprises in several international markets and they are supported through a wide (+600) Channel Partners Network.
 
-The company already employs highly skilled developers and engineers, and we are constantly seeking to expand our team across a range of technical disciplines in order to achieve its mission and support its impressive and continuous growth. It is our belief that investment in technology is fundamental to this success, but investment in human capital is even more paramount to achieve our vision.
+In 2007, SoftOne was the first Greek software vendor to offer its ERP as a cloud service and today, it is the undisputed leader in the Greek Cloud ERP market with 8.500+ cloud installations.
 
-You will be part of an energetic and talented team of experts that demonstrate superb technical competency, delivering critical technological solutions on time and ensuring the highest levels of availability, performance and security.
+In 2016, SoftOne Technologies became part of Olympia Group, one of the most dominant group of companies in the Greek market, with more than 4.000 employees in Greece and internationally.
+
+From 2019 to 2022, SoftOne completed a series of strategic investment moves that included the acquisition of Unisoft, Prosvasis, Regate, IMPACT and cosmoONE. This development has placed SoftOne at the leading position of the business software market in Greece as a powerful group of companies.
+
+
+SOFTONE Group
+SOFTONE Group is one of the largest technology ecosystems in Greece and SE Europe, that includes six leading brands (SoftOne, UNISOFT, PROSVASIS, Regate, IMPACT and cosmoONE), currently employing more than 450 technology and business professionals.
+
+The companies of the Group focus on the development of business and accounting software solutions, innovative cloud services, enterprise mobility applications and electronic invoicing and procurement solutions, having earned numerous awards and distinctions for their innovation and contribution in supporting the digital transformation process of companies.
+
+The Group’s applications and solutions are used by more than 75,000 enterprises in Greece and several international markets (Cyprus, Romania, Bulgaria), and they are supported through a wide (+600) Channel Partners Network. Following its ongoing strategic commitment to innovation, powered by cutting-edge cloud technologies, SOFTONE GROUP is today the undisputed leader in the Greek Cloud-based solutions market and a decisive player in SE Europe with more than 50,000 Cloud (SaaS) installations. Additionally, SOFTONE Group is the largest e-invoicing, supply chain and B2B solutions provider in Greece. The high adoption of the Group’s product and services portfolio has formed the largest ecosystem of B2B solutions in the Greek market, interconnecting more than 350,000 companies.
+
+Leading the advances in digital transformation, SOFTONE Group's priority and commitment is the ongoing investment in cutting-edge solutions that yield businesses high added value at low cost, making digital transformation affordable and feasible for any enterprise.
+
+Soft1 Technology
+
+
+
+Innovative technologies that create business results!
+ 
+
+Soft1 software features a series of substantial benefits that pertain to its structural architecture, technologies and its functionality.
+
+It is one of the most innovative business software solutions, as it was designed with advanced technical specifications, exploiting cutting-edge technology.
+
+The technologies included in Soft1 ERP allow for extremely high processing speeds in different data bases, while demanding less bandwidth.
+
+This flexibility is what makes Soft1 the ideal solution not only for smaller companies with simple needs, but also for large businesses with more complex requirements. It is ideal for groups of companies, as well as for smaller commercial enterprises, production units, franchise companies, store chains, sales providers etc. offering benefits such as:
+
+ 
+
+The exploitation of advanced development tools, methodologies and innovative technologies.
+The development of applications based on international standards that enforce quality norms, not just on the initial design of the applications, but throughout their entire development cycle.
+The use of a common execution platform -SoftOne Business Explorer (Player)- which homogenizes the development, standardization, installation, maintenance and use of the applications.
+The exploitation of SoftOne Business Explorer, in order to significantly reduce the time of function adaptation to any new or special demands.
+The capability to apportion processing power and/or the data base to more than one server, for the more efficient operation of the system.
