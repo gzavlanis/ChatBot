@@ -7,6 +7,8 @@ import { Dna } from 'react-loader-spinner';
 import UilAngleRightB from '@iconscout/react-unicons/icons/uil-angle-right-b';
 import UilMicrophone from '@iconscout/react-unicons/icons/uil-microphone';
 import Navbar from './Navbar';
+import Bot from './bot.png';
+import User from './user.png';
 
 function App() {
   const [userInput, setUserInput] = useState('');
@@ -102,7 +104,10 @@ function App() {
                   <div className = 'm-3 p-3 rounded-2xl' style = {{
                     backgroundColor: message.fromUser ? themes.primaryColor: 'white', color : message.fromUser ? themes.primaryFontColor : themes.secondaryFontColor,
                     borderTopLeftRadius: !message.fromUser && 0, borderTopRightRadius: message.fromUser && 0 }}>
-                      <p className = 'break-words text-md'>{message.fromUser ? message.msg : message.msg}</p>
+                      {message.fromUser ? <img src = {User} alt = "user" width = "25" height = "25" style = {{ float: "left"}}/> : <img src = {Bot} alt = "bot" width = "25" height = "25" style = {{ float: "left" }}/>}
+                      <div>
+                        <p className = 'break-words text-md mx-2'>&nbsp;&nbsp;{message.fromUser ? message.msg : message.msg}</p>
+                      </div>
                     </div>
                 </div>
               )
@@ -114,7 +119,7 @@ function App() {
 
       <div className = {`w-full fixed bottom-0`}>
         <div className = 'justify-end items-center bg-white rounded-xl flex mx-96 my-3 shadow-xl'>
-          <input className = 'p-3 bg-white w-full rounded-l-md border-0 outline-none' placeholder = 'How can I help you?' type = 'text' id = 'message' 
+          <input className = 'p-3 bg-white w-full rounded-l-md border-0 outline-none' placeholder = 'Hello!' type = 'text' id = 'message' 
             name = 'message' value = {userInput} onChange = {(e) => setUserInput(e.target.value)} onKeyDown = {handleKeyDown}/>
           <button className = 'bg-white px-4' disabled = {!browserSupportsSpeechRecognition} onClick = {handleRecording}>
             {recording ? <UilMicrophone size = "26" color = "green"/> : <UilMicrophone size = "26" color = "grey"/>}

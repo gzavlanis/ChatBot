@@ -1,7 +1,7 @@
 import openai, os
 from dotenv import load_dotenv
 
-load_dotenv("api/.env")
+load_dotenv(".env")
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
 def read_file(file):
@@ -12,7 +12,7 @@ def read_file(file):
         content = content + " " + line.strip()
     return content
 
-session_prompt = read_file('api/data/data.txt')
+session_prompt = read_file('data/data.txt')
 restart_sequence = "\n\nUser:"
 start_sequence = "\nVBot:"
 
