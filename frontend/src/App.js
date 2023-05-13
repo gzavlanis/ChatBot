@@ -88,9 +88,6 @@ function App() {
   return(
     <div className = 'min-h-screen bg-grey-100' style = {{ backgroundColor: themes.backgroundColor }}>
       <Navbar/>
-      <div style = {{ backgroundColor: themes.primaryColor }} className = { `w-full h-18 fixed flex justify-between` }>
-        <div style = {{ color: themes.logoColor }} className = 'text-green-100 text-2xl font-bold p-3 font-sans'>Skill90 Bot</div>
-      </div>
       <div className = 'py-32'>
         <div className = 'max-w-2xl mx-auto space-y-12 grid grid-cols-1 overflow-y-auto scroll-smooth scrollbar-hide overflow-x-hidden' style = {{ maxHeight: '30rem' }}>
           {loading &&
