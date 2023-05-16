@@ -23,7 +23,7 @@ def answer(ques, chat_log = None):
         try:
             prompt_text = f'{chat_log}{restart_sequence} {ques}{start_sequence}'
             print(prompt_text)
-            response = openai.Completion.create(model = 'text-davinci-003', prompt = prompt_text, temperature = 0.8, max_tokens = 2000, top_p = 1, frequency_penalty = 0.0, presence_penalty = 0.6, stop = ["User:", "VBot"])
+            response = openai.Completion.create(model = 'text-davinci-003', prompt = prompt_text, temperature = 0.8, max_tokens = 2048, top_p = 1, frequency_penalty = 0.0, presence_penalty = 0.6, stop = ["User:", "VBot"])
             ans = response['choices'][0]['text']
             return str(ans)
         except:
